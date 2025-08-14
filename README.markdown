@@ -5,11 +5,11 @@
 This project develops a data-driven recommendation system for used car prices in Saudi Arabia. The system aims to provide accurate price suggestions based on vehicle attributes, helping sellers set competitive prices and buyers identify fair deals. It is designed for platforms like Car-Connect, which connects buyers and sellers in the growing used car market.
 
 The model uses regression techniques to predict car prices, with a focus on minimizing Root Mean Squared Error (RMSE) for high accuracy. The final model is a tuned Support Vector Regressor (SVR) that achieves the following performance on test data:
-- MAE: ~4,500 SAR
-- MAPE: ~5.8%
-- RMSE: ~6,200 SAR
+- MAE: ~13,500 SAR
+- MAPE: ~63%
+- RMSE: ~23,300 SAR
 
-These metrics meet the success criteria (MAE < 5,000 SAR, MAPE < 6.5%, RMSE < 7,000 SAR), ensuring reliable predictions that can reduce pricing losses and boost platform trust.
+These metrics do not meet the success criteria (MAE < 5,000 SAR, MAPE < 6.5%, RMSE < 7,000 SAR). Further development is required to achieve these success criteria.
 
 ## Business Context
 
@@ -66,7 +66,7 @@ The dataset is included in the repository as `data_saudi_used_cars.csv`.
 
 - Data limited to syarah.com, may not generalize to all markets.
 - No real-time data, model retraining needed periodically.
-- Future: Incorporate more features (e.g., condition photos, market trends), deploy as web app.
+- Future: Incorporate more features (e.g., condition photos, market trends).
 
 ## Contributors
 - Bernando Virto Gunawan
